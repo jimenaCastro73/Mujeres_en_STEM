@@ -20,13 +20,6 @@
     --bs-font-size-xl: 1.5rem;
     --bs-font-size-xxl: 2rem;
 
-    /* Espaciado */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 3rem;
-    --spacing-xl: 4rem;
-
     /* Bordes y sombras */
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -50,12 +43,7 @@ body {
 /* Header y Navegación */
 .header {
     background-color: var(--color-primary);
-    padding: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-    padding: var(--spacing-sm) 0;
 }
 
 .navbar-brand {
@@ -63,16 +51,10 @@ body {
     color: var(--color-text-light) !important;
 }
 
-.logo {
-    font-size: var(--font-size-xl);
-    margin: 0;
-}
-
 .nav-link {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    padding: var(--spacing-xs) var(--spacing-sm) !important;
     transition: color 0.3s ease;
 }
 
@@ -84,10 +66,10 @@ body {
 .footer {
     background-color: var(--color-primary-dark);
     color: var(--color-text-light);
-    padding: var(--spacing-lg) 0;
 }
 
-.footer h4 {
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-sm);
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
 }

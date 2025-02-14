@@ -1,6 +1,4 @@
-/* Estilos para la sección principal */
 main {
-    padding: var(--spacing-xl) 0;
     background-color: var(--color-background);
 }
 
@@ -8,11 +6,9 @@ main {
 main h2 {
     text-align: center;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-xl);
     font-size: 2.5rem;
     font-weight: 700;
     position: relative;
-    padding-bottom: var(--spacing-sm);
 }
 
 main h2::after {
@@ -33,7 +29,6 @@ main h2::after {
     border-radius: var(--border-radius);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: var(--spacing-lg);
     overflow: hidden;
 }
 
@@ -55,7 +50,6 @@ main h2::after {
 
 /* Contenido de las tarjetas */
 .card-body {
-    padding: var(--spacing-md);
     background-color: var(--color-card-bg);
 }
 
@@ -63,15 +57,12 @@ main h2::after {
     color: var(--color-primary);
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: var(--spacing-xs);
 }
 
 .pioneer-field {
     color: var(--color-secondary);
     font-weight: 600;
     font-size: 1.1rem;
-    margin-bottom: var(--spacing-sm);
-    padding-bottom: var(--spacing-xs);
     border-bottom: 2px solid var(--color-background);
 }
 
@@ -84,32 +75,42 @@ main h2::after {
 
 .achievements-list li {
     position: relative;
-    padding-left: var(--spacing-md);
-    margin-bottom: var(--spacing-xs);
     line-height: 1.4;
+    padding-left: 1.5rem;
 }
 
 .achievements-list li::before {
     content: '•';
     color: var(--color-secondary);
     position: absolute;
-    left: 0;
+    left: 0.5rem;
     font-size: 1.2rem;
+}
+
+/* Altura fija para las cards */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievements-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    main {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
-
     main h2 {
         font-size: 2rem;
-        margin-bottom: var(--spacing-lg);
-    }
-
-    .card {
-        margin-bottom: var(--spacing-md);
     }
 }
 
@@ -129,4 +130,3 @@ main h2::after {
         transform: translateY(0);
     }
 }
-

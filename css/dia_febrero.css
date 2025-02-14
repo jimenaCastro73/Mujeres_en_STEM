@@ -1,24 +1,10 @@
-/* dia-febrero.css */
-
-/* Sección principal */
-main.container {
-    padding: var(--spacing-xl) 0;
-}
-
 /* Sección Sobre el Día Internacional */
 .about-section {
     background-color: var(--color-background);
-    padding: var(--spacing-xl) 0;
-    margin-bottom: var(--spacing-xl);
-}
-
-.about-content {
-    padding: var(--spacing-lg);
 }
 
 .about-content h2 {
     color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
     font-weight: 700;
 }
 
@@ -42,14 +28,12 @@ main.container {
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
-    padding: var(--spacing-md);
+    gap: 1.5rem;
 }
 
 .activity-card {
     background-color: var(--color-card-bg);
     border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
     text-align: center;
     box-shadow: var(--box-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -74,9 +58,7 @@ main.container {
 
 .activity-icon {
     font-size: 2.5rem;
-    margin-bottom: var(--spacing-sm);
     display: inline-block;
-    padding: var(--spacing-sm);
     border-radius: 50%;
     background-color: var(--color-background);
 }
@@ -84,13 +66,11 @@ main.container {
 .activity-card h3 {
     color: var(--color-primary);
     font-size: 1.4rem;
-    margin-bottom: var(--spacing-sm);
     font-weight: 600;
 }
 
 .activity-card p {
     color: var(--color-text);
-    margin-bottom: var(--spacing-sm);
     line-height: 1.6;
 }
 
@@ -107,11 +87,9 @@ main.container {
 .section-title {
     text-align: center;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-xl);
     font-size: 2.2rem;
     font-weight: 700;
     position: relative;
-    padding-bottom: var(--spacing-sm);
 }
 
 .section-title::after {
@@ -147,26 +125,7 @@ main.container {
     animation-delay: calc(var(--animation-order, 0) * 0.2s);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-    .about-section {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
-
-    .about-content {
-        padding: var(--spacing-md) 0;
-        text-align: center;
-    }
-
-    .about-image {
-        margin-top: var(--spacing-md);
-    }
-
-    .activities-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-    }
-
     .section-title {
         font-size: 1.8rem;
     }
