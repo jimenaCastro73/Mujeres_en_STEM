@@ -1,0 +1,93 @@
+/* estilos.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    /* Paleta de colores mejorada */
+    --color-primary: #9c27b0;
+    --color-primary-light: #ba68c8;
+    --color-primary-dark: #7b1fa2;
+    --color-secondary: #ff4081;
+    --color-accent: #00bcd4;
+    --color-text: #263238;
+    --color-text-light: #ffffff;
+    --color-background: #f5f5f5;
+    --color-card-bg: #ffffff;
+
+    /* Tipografía */
+    --bs-font-family: 'Quicksand', sans-serif;
+    --bs-font-size-base: 1rem;
+    --bs-font-size-lg: 1.25rem;
+    --bs-font-size-xl: 1.5rem;
+    --bs-font-size-xxl: 2rem;
+
+    /* Espaciado */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+
+    /* Bordes y sombras */
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bs-font-family) !important;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* Header y Navegación */
+.header {
+    background-color: var(--color-primary);
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: var(--spacing-sm) 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--color-text-light) !important;
+}
+
+.logo {
+    font-size: var(--font-size-xl);
+    margin: 0;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: var(--spacing-xs) var(--spacing-sm) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-accent) !important;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light);
+    padding: var(--spacing-lg) 0;
+}
+
+.footer h4 {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+}
